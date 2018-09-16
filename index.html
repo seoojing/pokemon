@@ -1,0 +1,71 @@
+
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>pokemon</title>
+		<style>
+			
+			body{background-color: #445772;}
+			
+			img {width:30%; 
+				 position:absolute; left:30%; top:8%;
+				
+				 cursor:pointer;}
+			#one {z-index:1;}
+			#two {opacity: 0;}
+			#three {width: 40%;left: 25%;top: 10%;}
+			#f {width: 20%;left: 35%;top: 34%; }
+			#five{left: 58%;top: 60%;}
+			#six{left: 58%;top: 60%;opacity: 0;}
+
+			
+		</style>
+
+
+
+	</head>
+
+
+	<script>
+
+		var i = 0;
+		function a(){
+			i += 1;
+			if(i%2==0){
+				one.style.opacity = 1;
+				two.style.opacity = 0;
+				six.style.opacity = 0;
+				mp3.currentTime = 0;
+				mp2.currentTime = 0;
+				mp3.pause();
+
+			}else if(i%2==1){
+				one.style.opacity = 0;
+				two.style.opacity = 1;
+				six.style.opacity = 1;
+				mp3.play();
+				mp2.play();
+				mp1.pause();
+			}
+		}
+		
+	</script>
+	<body>
+<audio id="mp1" src="m1.mp3" autoplay="true" loop="" preload="auto"></audio>
+	<audio id="mp2" src="bro.mp3" preload="auto"  ></audio>
+	<audio id="mp4" src="cr.mp3"autoplay="true" preload="auto"  ></audio>
+		
+
+		<audio id="mp3" src="enddd.mp3"  preload="auto"></audio>
+		<section>
+			<img id="f" src="ee.png"/>
+			<img id="three" src="boy.png"/>
+			
+			<img id="one" src="slow.gif" onclick="a()"/>
+			<img id="two" src="bbro.gif"/>
+			<img id="five" src="mee.png"/>
+			<img id="six" src="my.png"/>
+			
+		</section>
+	</body>
+</html>
